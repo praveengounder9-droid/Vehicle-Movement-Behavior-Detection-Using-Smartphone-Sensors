@@ -24,8 +24,8 @@ This application transforms the rule-based smartphone sensor analysis from `Proj
    $$\Delta \text{Acc} = |\text{diff}(\text{Acceleration Magnitude})|$$
    $$\Delta \text{Gyro} = |\text{diff}(\text{Gyroscope Magnitude})|$$
 5. **Dynamic Statistical Thresholds ($\mu + 2\sigma$)**:
-   $\text{acc\_threshold} = \text{mean}(\Delta \text{Acc}) + 2 \times \text{std}(\Delta \text{Acc}) \approx 2.7958\text{ m/s}^2$ 
-   $\text{gyro\_threshold} = \text{mean}(\text{Gyro Magnitude}) + 2 \times \text{std}(\text{Gyro Magnitude}) \approx 1.2733\text{ rad/s}$
+   acc_threshold $= \text{mean}(\Delta \text{Acc}) + 2 \times \text{std}(\Delta \text{Acc}) \approx 2.7958\text{ m/s}^2$
+   gyro_threshold $= \text{mean}(\text{Gyro Magnitude}) + 2 \times \text{std}(\text{Gyro Magnitude}) \approx 1.2733\text{ rad/s}$
 6. **Hierarchical Rule Classification**:
    - **Rule 1 (Turning)**: If $\text{Gyroscope Magnitude} > \text{gyro\_threshold} \implies \text{Turning}$
    - **Rule 2 (Sudden Acc/Braking)**: If $\Delta \text{Acc} > \text{acc\_threshold}$ AND $\text{Gyroscope Magnitude} \le \text{gyro\_threshold} \implies \text{Sudden Acceleration/Braking}$
