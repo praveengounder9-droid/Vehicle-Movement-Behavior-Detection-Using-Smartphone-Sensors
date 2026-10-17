@@ -27,7 +27,7 @@ This application transforms the rule-based smartphone sensor analysis from `Proj
    gyro_threshold $= \text{mean}(\text{Gyro Magnitude}) + 2 \times \text{std}(\text{Gyro Magnitude}) \approx 1.2733\text{ rad/s}$
 6. **Hierarchical Rule Classification**:
    - **Rule 1 (Turning)**:  If Gyroscope Magnitude > gyro threshold => Turning
-   - **Rule 2 (Sudden Acc/Braking)**: If Delta Acc > acc threshold AND Gyroscope Magnitude <= gyro threshold => Sudden Acceleration/Braking
+   - **Rule 2 (Sudden Acc/Braking)**: If  $$\Delta \text{Acc} > acc threshold AND Gyroscope Magnitude <= gyro threshold => Sudden Acceleration/Braking
    - **Rule 3 (Normal Movement)**: Default baseline when neither threshold is breached.
 
 ---
