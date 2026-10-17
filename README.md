@@ -28,7 +28,6 @@ This application transforms the rule-based smartphone sensor analysis from `Proj
 6. **Hierarchical Rule Classification**:
    - **Rule 1 (Turning)**: If $\text{Gyroscope Magnitude} > \text{gyro\_threshold} \implies \text{Turning}$
    - **Rule 2 (Sudden Acc/Braking)**: If $\Delta \text{Acc} > \text{acc\_threshold}$ AND $\text{Gyroscope Magnitude} \le \text{gyro\_threshold} \implies \text{Sudden Acceleration/Braking}$
-
    - **Rule 3 (Normal Movement)**: Default baseline when neither threshold is breached.
 
 ---
