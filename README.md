@@ -19,7 +19,7 @@ This application transforms the rule-based smartphone sensor analysis from `Proj
 2. **Sensor Synchronization**: Merges sensor streams on elapsed `Milliseconds` via inner join.
 3. **Sensor Vector Magnitudes**:
    Acceleration Magnitude = $\sqrt{Acc\_X^2 + Acc\_Y^2 + Acc\_Z^2}$
-   Gyroscope Magnitude = sqrt{{Gyro_X}^2 + {Gyro_Y}^2 + {Gyro_Z}^2}
+   Gyroscope Magnitude = $\sqrt{Gyro\_X^2 + Gyro\_Y^2 + Gyro\_Z^2}$
 4. **Step-to-Step Changes**:
    $$\Delta \text{Acc} = |\text{diff}(\text{Acceleration Magnitude})|$$
    $$\Delta \text{Gyro} = |\text{diff}(\text{Gyroscope Magnitude})|$$
