@@ -18,8 +18,8 @@ This application transforms the rule-based smartphone sensor analysis from `Proj
 1. **Duplicate Purging**: Identifies and removes duplicate timestamp logs from both `Accelerometer.csv` and `Gyroscope.csv`.
 2. **Sensor Synchronization**: Merges sensor streams on elapsed `Milliseconds` via inner join.
 3. **Sensor Vector Magnitudes**:
-   $$\text{Acceleration Magnitude} = \sqrt{\text{Acc\_X}^2 + \text{Acc\_Y}^2 + \text{Acc\_Z}^2}$$
-   $$\text{Gyroscope Magnitude} = \sqrt{\text{Gyro\_X}^2 + \text{Gyro\_Y}^2 + \text{Gyro\_Z}^2}$$
+   Acceleration Magnitude = sqrt{{Acc_X}^2 + {Acc_Y}^2 + {Acc_Z}^2}
+   Gyroscope Magnitude = sqrt{{Gyro_X}^2 + {Gyro_Y}^2 + {Gyro_Z}^2}
 4. **Step-to-Step Changes**:
    $$\Delta \text{Acc} = |\text{diff}(\text{Acceleration Magnitude})|$$
    $$\Delta \text{Gyro} = |\text{diff}(\text{Gyroscope Magnitude})|$$
